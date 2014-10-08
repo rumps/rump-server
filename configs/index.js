@@ -1,7 +1,6 @@
 'use strict';
 
 var merge = require('merge');
-var path = require('path');
 var rump = require('rump');
 
 exports.rebuild = function() {
