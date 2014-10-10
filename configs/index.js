@@ -1,18 +1,18 @@
 'use strict';
 
-var merge = require('merge');
+var extend = require('extend');
 var rump = require('rump');
 
 exports.rebuild = function() {
   var development = rump.configs.main.environment === 'development';
 
-  rump.configs.main.globs = merge.recursive({
+  rump.configs.main.globs = extend(true, {
     watch: {
       server: '**/*'
     }
   }, rump.configs.main.globs);
 
-  exports.browserSync = merge.recursive({
+  exports.browserSync = extend(true, {
     ghostMode: development,
     notify: development,
     online: false,
