@@ -2,7 +2,7 @@
   "name": "rump-server",
   "description": "Rump piece for adding a development server to the flow",
   "author": "Juan Placencia",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "homepage": "https://github.com/rumps/rump-server",
   "repository": {
