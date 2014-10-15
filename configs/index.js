@@ -1,10 +1,12 @@
 'use strict';
 
 var extend = require('extend');
+var path = require('path');
 var rump = require('rump');
 
 exports.rebuild = function() {
   var development = rump.configs.main.environment === 'development';
+  var bsDefaults;
 
   rump.configs.main.globs = extend(true, {
     watch: {
@@ -13,10 +15,11 @@ exports.rebuild = function() {
   }, rump.configs.main.globs);
 
   rump.configs.main.server = extend(true, {
-    port: parseInt(process.env.PORT, 10) || 3000
+    port: parseInt(process.env.PORT, 10) || 3000,
+    watch: development
   }, rump.configs.main.server);
 
-  exports.browserSync = extend(true, {
+  bsDefaults = {
     ghostMode: development,
     notify: development,
     online: false,
@@ -24,7 +27,12 @@ exports.rebuild = function() {
     server: {
       baseDir: rump.configs.main.paths.destination.root
     }
-  }, rump.configs.main.server.browserSync);
+  };
+  if(rump.configs.main.server.watch) {
+    bsDefaults.files = path.join(rump.configs.main.paths.destination.root,
+                                 rump.configs.main.globs.watch.server);
+  }
+  exports.browserSync = extend(true, bsDefaults, rump.configs.main.server.browserSync);
 };
 
 exports.rebuild();

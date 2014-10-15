@@ -1,5 +1,8 @@
 # Changelog
 
+#### WIP
+- Add ability to override defaults for watching in BrowserSync
+
 #### 0.2.3
 - Add port number information to info task
 - Fix info task (it was set to `rump:info:static`)
