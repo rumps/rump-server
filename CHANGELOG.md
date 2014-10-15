@@ -1,6 +1,6 @@
 # Changelog
 
-#### WIP
+#### 0.2.4
 - Add ability to override defaults for watching in BrowserSync
 
 #### 0.2.3
