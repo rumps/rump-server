@@ -36,7 +36,9 @@ This specifies which port to run BrowserSync under.
 
 #### `options.server.watch` (`options.environment === 'development'`)
 This specifies whether BrowserSync monitors files for file changes and inject
-changes or perform full-page refreshes.
+changes or perform full-page refreshes. By default monitoring is set up if the
+environment is set to development. (visit the main Rump repository for more
+information on environment)
 
 #### `options.server.browserSync`
 This specifies any options you want to override in BrowserSync. If the
