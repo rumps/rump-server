@@ -32,7 +32,9 @@ exports.rebuild = function() {
     bsDefaults.files = path.join(rump.configs.main.paths.destination.root,
                                  rump.configs.main.globs.watch.server);
   }
-  exports.browserSync = extend(true, bsDefaults, rump.configs.main.server.browserSync);
+
+  exports.browserSync = extend(true, bsDefaults,
+                               rump.configs.main.server.browserSync);
 };
 
 exports.rebuild();
