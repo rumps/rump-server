@@ -16,11 +16,14 @@ The following is appended to the core Rump API:
 
 ### `rump.addGulpTasks()`
 This module adds the following tasks:
-- `rump:server` will start up the `rump:watch` task, then start up BrowserSync
-  on the destination path.
-- `rump:info:server` will display information on what this specific module
-  does, specifically the port number the local server is started at. This task
-  is also added to the `rump:info` task.
+
+- `server` will start up the `watch` task, then start up BrowserSync on the
+destination path.
+- `server:prod` is the same as `server` with `options.environment` set to
+`'production'` for a production build.
+- `info:server` will display information on what this specific module does,
+specifically the port number the local server is started at. This task is also
+added to the `info` task.
 
 ### `rump.configure(options)`
 Redefine options for Rump and Rump modules to follow. In addition to what

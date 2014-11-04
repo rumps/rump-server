@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.3.0
+- Update to match Rump 0.3.0
+
 #### 0.2.4
 - Add ability to override defaults for watching in BrowserSync
 

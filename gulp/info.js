@@ -6,7 +6,7 @@ var path = require('path');
 var rump = require('rump');
 var pkg = require('../package');
 
-gulp.task('rump:info:server', function() {
+gulp.task(rump.taskName('info:server'), function() {
   var destination = path.join(rump.configs.main.paths.destination.root,
                               rump.configs.main.paths.destination.static);
 
@@ -17,4 +17,4 @@ gulp.task('rump:info:server', function() {
   console.log();
 });
 
-gulp.tasks['rump:info'].dep.push('rump:info:server');
+gulp.tasks[rump.taskName('info')].dep.push(rump.taskName('info:server'));
