@@ -1,5 +1,8 @@
 # Changelog
 
+#### 0.3.1
+- Add pushState support
+
 ### 0.3.0
 - Update to match Rump 0.3.0
 

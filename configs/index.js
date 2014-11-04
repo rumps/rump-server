@@ -1,6 +1,7 @@
 'use strict';
 
 var extend = require('extend');
+var historyApiFallback = require('connect-history-api-fallback');
 var path = require('path');
 var rump = require('rump');
 
@@ -25,12 +26,16 @@ exports.rebuild = function() {
     online: false,
     port: rump.configs.main.server.port,
     server: {
-      baseDir: rump.configs.main.paths.destination.root
+      baseDir: rump.configs.main.paths.destination.root,
+      middleware: []
     }
   };
   if(rump.configs.main.server.watch) {
     bsDefaults.files = path.join(rump.configs.main.paths.destination.root,
                                  rump.configs.main.globs.watch.server);
+  }
+  if(rump.configs.main.server.pushState) {
+    bsDefaults.server.middleware.push(historyApiFallback);
   }
 
   exports.browserSync = extend(true, bsDefaults,
