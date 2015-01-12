@@ -13,7 +13,7 @@ information, visit the [Rump repository](https://github.com/rumps/rump).
 ## API
 The following is appended to the core Rump API:
 
-### `rump.addGulpTasks()`
+### `rump.addGulpTasks(options)`
 This module adds the following tasks:
 
 - `server` will start up the `watch` task, then start up BrowserSync on the
