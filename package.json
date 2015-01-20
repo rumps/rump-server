@@ -1,6 +1,6 @@
 {
   "name": "rump-server",
-  "description": "Rump piece for adding a development server to the flow",
+  "description": "Rump piece for adding a static server to the flow",
   "author": "Juan Placencia",
   "version": "0.6.0",
   "license": "MIT",
@@ -12,9 +12,8 @@
   "main": "./index.js",
   "dependencies": {
     "chalk": "^0.5.1",
-    "connect-history-api-fallback": "^0.0.5",
-    "browser-sync": "^1.5.5",
     "extend": "^2.0.0",
+    "pushserve": "^0.1.6",
     "require-all": "^1.0.0"
   }
 }

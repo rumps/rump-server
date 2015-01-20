@@ -13,7 +13,7 @@ gulp.task(rump.taskName('info:server'), function() {
   console.log();
   console.log(chalk.magenta('--- Server', 'v' + pkg.version));
   console.log('Static files from', chalk.green(destination), 'are served',
-              'on port', chalk.yellow(rump.configs.browserSync.port));
+              'on port', chalk.yellow(rump.configs.pushserve.port));
   console.log();
 });
 

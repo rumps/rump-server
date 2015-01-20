@@ -15,8 +15,8 @@ rump.on('update:main', function() {
   rump.emit('update:server');
 });
 
-Object.defineProperty(rump.configs, 'browserSync', {
+Object.defineProperty(rump.configs, 'pushserve', {
   get: function() {
-    return configs.browserSync;
+    return configs.pushserve;
   }
 });

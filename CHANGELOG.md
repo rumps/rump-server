@@ -1,6 +1,7 @@
 # Changelog
 
 ### 0.6.0
+- **BREAKING** Drop BrowserSync (into its own module) in favor of pushserve
 - Update to match Rump 0.6.0 (pass options)
 - Update `require-all`
 

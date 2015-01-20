@@ -1,16 +1,16 @@
 'use strict';
 
-var browserSync = require('browser-sync');
 var gulp = require('gulp');
+var pushserve = require('pushserve');
 var rump = require('rump');
 
-gulp.task(rump.taskName('server'),
-          [rump.taskName('watch')],
-          function(callback) {
-  browserSync(rump.configs.browserSync, callback);
-});
+if(!gulp.tasks[rump.taskName('server')]) {
+  gulp.task(rump.taskName('server'), [rump.taskName('watch')], function(callback) {
+    pushserve(rump.configs.pushserve, callback);
+  });
 
-gulp.task(rump.taskName('server:prod'), [
-  rump.taskName('prod:setup'),
-  rump.taskName('server')
-]);
+  gulp.task(rump.taskName('server:prod'), [
+    rump.taskName('prod:setup'),
+    rump.taskName('server')
+  ]);
+}
