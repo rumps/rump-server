@@ -5,7 +5,9 @@ var pushserve = require('pushserve');
 var rump = require('rump');
 
 if(!gulp.tasks[rump.taskName('server')]) {
-  gulp.task(rump.taskName('server'), [rump.taskName('watch')], function(callback) {
+  gulp.task(rump.taskName('server'),
+            [rump.taskName('watch')],
+            function(callback) {
     pushserve(rump.configs.pushserve, callback);
   });
 
