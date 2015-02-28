@@ -9,7 +9,10 @@
     "type": "git",
     "url": "https://github.com/rumps/rump-server"
   },
-  "main": "./index.js",
+  "scripts": {
+    "test": "jshint lib test && mocha"
+  },
+  "main": "./lib",
   "dependencies": {
     "chalk": "^0.5.1",
     "extend": "^2.0.0",
