@@ -1,0 +1,8 @@
+{
+  "extends": "../.jshintrc",
+  "esnext": true,
+  "mocha": true,
+  "globals": {
+    "fetch": true
+  }
+}
