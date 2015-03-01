@@ -16,7 +16,7 @@ var sinon = require('sinon');
 var sleep = require('timeout-then');
 var rump = require('../lib');
 
-describe('rump images tasks', function() {
+describe('rump server tasks', function() {
   beforeEach(function() {
     rump.configure({
       paths: {
