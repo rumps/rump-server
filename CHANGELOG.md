@@ -1,5 +1,8 @@
 # Changelog
 
+### 0.6.1
+- Add option to toggle pushState on or off
+
 ### 0.6.0
 - **BREAKING** Drop BrowserSync (into its own module) in favor of pushserve
 - Update to match Rump 0.6.0 (pass options)
