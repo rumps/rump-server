@@ -86,6 +86,7 @@ describe('tasks', function() {
       await writeFile('test/fixtures/index.html', newContent)
       await timeout(1000)
       response = await Promise.all([
+        fetch('http://localhost:3000/'),
         fetch('http://localhost:3000/index.html'),
         fetch('http://localhost:3000/void.html'),
       ])
