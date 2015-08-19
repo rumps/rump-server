@@ -1,16 +1,32 @@
 # Rump Server
 [![NPM](http://img.shields.io/npm/v/rump-server.svg?style=flat-square)](https://www.npmjs.org/package/rump-server)
 ![License](http://img.shields.io/npm/l/rump-server.svg?style=flat-square)
-[![Travis](http://img.shields.io/travis/rumps/rump-server.svg?style=flat-square&label=travis)](https://travis-ci.org/rumps/rump-server)
+[![Issues](https://img.shields.io/github/issues/rumps/issues.svg?style=flat-square)](https://github.com/rumps/issues/issues)
+
+
+## Status
+
+### Master
+[![Dependencies](http://img.shields.io/david/rumps/server.svg?style=flat-square)](https://david-dm.org/rumps/server)
+[![Dev Dependencies](http://img.shields.io/david/dev/rumps/server.svg?style=flat-square)](https://david-dm.org/rumps/server#info=devDependencies)
+<br>
+[![Travis](http://img.shields.io/travis/rumps/server.svg?style=flat-square&label=travis)](https://travis-ci.org/rumps/server)
 [![Appveyor](http://img.shields.io/appveyor/ci/jupl/rump-server.svg?style=flat-square&label=appveyor)](https://ci.appveyor.com/project/jupl/rump-server)
-[![Dependencies](http://img.shields.io/david/rumps/rump-server.svg?style=flat-square)](https://david-dm.org/rumps/rump-server)
-[![Dev Dependencies](http://img.shields.io/david/dev/rumps/rump-server.svg?style=flat-square)](https://david-dm.org/rumps/rump-server#info=devDependencies)
+[![Codecov](http://img.shields.io/codecov/c/github/rumps/server.svg?style=flat-square&label=codecov)](https://codecov.io/github/rumps/server?view=all)
+
+### Develop
+[![Dependencies](http://img.shields.io/david/rumps/server/develop.svg?style=flat-square)](https://david-dm.org/rumps/server/develop)
+[![Dev Dependencies](http://img.shields.io/david/dev/rumps/server/develop.svg?style=flat-square)](https://david-dm.org/rumps/server/develop#info=devDependencies)
+<br>
+[![Travis](http://img.shields.io/travis/rumps/server/develop.svg?style=flat-square&label=travis)](https://travis-ci.org/rumps/server)
+[![Appveyor](http://img.shields.io/appveyor/ci/jupl/rump-server/develop.svg?style=flat-square&label=appveyor)](https://ci.appveyor.com/project/jupl/rump-server)
+[![Codecov](http://img.shields.io/codecov/c/github/rumps/server/develop.svg?style=flat-square&label=codecov)](https://codecov.io/github/rumps/server?branch=develop&view=all)
 
 
 ## About
 Rump Server is a Rump module that starts up a local server that serves built
 assets using [pushserve](https://github.com/paulmillr/pushserve). For more
-information, visit the [Rump repository](https://github.com/rumps/rump).
+information, visit the [core repository](https://github.com/rumps/rump).
 
 
 ## API
@@ -35,7 +51,7 @@ available alongside default values:
 #### `options.server.port` (`process.env.PORT` or `3000`)
 This specifies which port to run pushserve under.
 
-#### `options.server.pushState` (`true`)
+#### `options.server.pushState` (`false`)
 This specifies whether to support assistance with HTML5 history API by serving
 `index.html` on requests that don't have a file location.
 

@@ -1,6 +1,14 @@
 # Changelog
 
-### 0.6.1
+### 0.7.0
+- Use Babel fully for ES2015+
+- Replace JSHint with ESLint
+- Add code coverage support
+- Update packages
+- Rewrite tests with ES2015+ and should.js
+- **BREAKING** Turn off pushState by default
+
+#### 0.6.1
 - Add option to toggle pushState on or off
 
 ### 0.6.0
