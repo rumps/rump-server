@@ -4,11 +4,11 @@
   "author": "Juan Placencia",
   "description": "Rump piece for adding a static server to the flow",
   "license": "MIT",
-  "homepage": "https://github.com/rumps/rump-server",
+  "homepage": "https://github.com/rumps/server",
   "main": "./lib",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rumps/rump-server"
+    "url": "https://github.com/rumps/server"
   },
   "scripts": {
     "preci": "npm run lint",

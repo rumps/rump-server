@@ -26,7 +26,7 @@
 ## About
 Rump Server is a Rump module that starts up a local server that serves built
 assets using [pushserve](https://github.com/paulmillr/pushserve). For more
-information, visit the [core repository](https://github.com/rumps/rump).
+information, visit the [core repository](https://github.com/rumps/core).
 
 
 ## API
