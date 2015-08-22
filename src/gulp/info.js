@@ -10,9 +10,13 @@ const name = ::rump.taskName,
 task(name('info:server'), () => {
   const {root} = configs.main.paths.destination,
         {port} = configs.pushserve
+  let action = 'served'
+  if(!configs.pushserve.noPushState) {
+    action = `served ${yellow('with pushState')}`
+  }
   console.log()
   console.log(magenta(`--- Server v${version}`))
-  console.log(`Static files from ${green(root)} are served`,
+  console.log(`Static files from ${green(root)} are ${action}`,
               `on port ${yellow(port)}`)
   console.log()
 })
