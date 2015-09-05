@@ -11,6 +11,6 @@ rump.on('gulp:main', (...args) => {
   rump.emit('gulp:server', ...args)
 })
 
-Object.defineProperty(rump.configs, 'pushserve', {
+Reflect.defineProperty(rump.configs, 'pushserve', {
   get: () => rump.configs.main.server.pushserve,
 })
