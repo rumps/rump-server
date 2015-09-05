@@ -6,10 +6,7 @@
   "license": "MIT",
   "homepage": "https://github.com/rumps/server",
   "main": "./lib",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rumps/server"
-  },
+  "repository": "rumps/server",
   "keywords": [
     "gulp",
     "pushserve",
